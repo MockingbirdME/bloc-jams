@@ -42,7 +42,6 @@ body {
     html {font-size: 120%; }
 }
 
-<<<<<<< HEAD
 .clearfix::before,
 .clearfix::after {
     content: " ";
@@ -51,7 +50,7 @@ body {
 .clearfix::after {
     clear: both;
 }
-=======
+
 body.landing {
     background-color: rgb(58,23,63);
 }
@@ -98,4 +97,7 @@ body.landing {
 .links-container .navbar-link:hover {
     color: rgb(233,50,117);
 }
->>>>>>> master
+.navbar-link:active {
+    color: rbg(233,50,117);
+    background-color: white;
+}
