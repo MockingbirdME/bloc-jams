@@ -59,12 +59,16 @@ var setCurrentAlbum = function(album) {
 };
 
 var findParentByClassName = function(selectedNode, desiredParent) {
-    if (selectedNode) {
-        var parentnode = selectedNode.parentElement;
-        while (parentnode.className != desiredParent && parentnode.className !== null) {
-            parentnode = parentnode.parentElement;
-        }
-        return parentnode;
+
+    var parentNode = selectedNode.parentElement;
+    if (parentNode == null) alert("No Parent Exists");
+    while (parentNode.className != desiredParent && parentNode.className !== null) {
+        parentnode = parentnode.parentElement;
+    }
+    if (parentNode == null){
+        alert("Desired Parent not found"); 
+    } else{
+        return parentNode;
     }
 };
 
